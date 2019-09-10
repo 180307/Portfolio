@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+   <h1 id="logo"><img src="images/logo.png" width="217" height="87"></h1>
+	<h2></h2>
+<h3>専門学校入学後に作成した作品集です。</h3>
+    <div id="Tabs1">
+      <ul>
+        <li><a href="#tabs-1">3Dモデル</a></li>
+        <li><a href="#tabs-2">イラスト</a></li>
+        <li><a href="#tabs-3">その他</a></li>
+      </ul>
+      <div id="tabs-1" style="display: table-footer-group">
+        <p>作品No.1</p>
+        <img src="images/名称未設定 1.png" width="890" height="266" alt=""/>
+	  </div>
+      <div id="tabs-2">
+        <p>コンテンツ 2</p>
+      </div>
+      <div id="tabs-3">
+        <p>コンテンツ 3</p>
+</div>
+    </div>
+    <h3>これは、レイアウト P タグのコンテンツです</h3>
+    <div id="Accordion1">
+    	  <h3><a href="#">セクション 1</a></h3>
+	      <div>
+    	    <p>コンテンツ 1</p>
+      </div>
+    	  <h3><a href="#">セクション 2</a></h3>
+    	  <div>
+    	    <p>コンテンツ 2</p>
+      </div>
+	      <h3><a href="#">セクション 3</a></h3>
+	      <div>
+    	    <p>コンテンツ 3</p>
+  </div>		
+</div>
+		<!-- フッター -->
+	<div id="footer">
+		<a:foot>&copy;Copyright KUZUHA cafe. All rights reserved.</a:foot>
+	</div>
+	<!-- フッター ここまで -->
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+</body>
+</html>
