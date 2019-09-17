@@ -3,12 +3,11 @@
 * Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
 
 .ui-accordion .ui-accordion-header{
-	display:block;
-	cursor:pointer;
-	position:relative;
-	margin-top:2px;
-	padding:.5em .5em .5em .7em;
-	min-height:0
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: .5em .5em .5em .7em;
+    min-height: 0
 	}
 .ui-accordion .ui-accordion-icons{
 

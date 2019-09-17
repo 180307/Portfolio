@@ -36,14 +36,26 @@ h3 {
     color: #e4dad3;
     text-align: center;
 }
+h4 {
+    padding: 0 0 0 0;
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #FFFFFF;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
 a:foot {
 	color:#6aa4d6;
 	text-align: center;
 }
 #footer{
-    background-image: url(../images/footer-bg.png);
     background-repeat: repeat-x;
-    margin-top: 30px;
+    margin-top: -30px;
     padding: 20px 0 20px 0;
     font-size: smaller;
     color: #FFFFFF;
