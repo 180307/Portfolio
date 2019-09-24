@@ -8,52 +8,110 @@
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+<link href="css/W3.css" rel="stylesheet" type="text/css">
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.accordion.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
-<div class="wrapper">
-   <h1 id="logo"><img src="images/logo.png" width="217" height="87"></h1>
-	<h2></h2>
-<h3>専門学校入学後に作成した作品集です。</h3>
-    <div id="Tabs1">
-      <ul>
-        <li><a href="#tabs-1">3Dモデル</a></li>
-        <li><a href="#tabs-2">イラスト</a></li>
-        <li><a href="#tabs-3">その他</a></li>
-      </ul>
-      <div id="tabs-1" style="display: table-footer-group">
-        <p>作品No.1</p>
-        <img src="images/名称未設定 1.png" width="890" height="266" alt=""/>
-	  </div>
-      <div id="tabs-2">
-        <p>コンテンツ 2</p>
-      </div>
-      <div id="tabs-3">
-        <p>コンテンツ 3</p>
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Content &times;</button>
+  <a href="#" class="w3-bar-item w3-button">HOME</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
-    </div>
-    <h3>これは、レイアウト P タグのコンテンツです</h3>
-    <div id="Accordion1">
-    	  <h3><a href="#">セクション 1</a></h3>
-	      <div>
-    	    <p>コンテンツ 1</p>
-      </div>
-    	  <h3><a href="#">セクション 2</a></h3>
-    	  <div>
-    	    <p>コンテンツ 2</p>
-      </div>
-	      <h3><a href="#">セクション 3</a></h3>
-	      <div>
-    	    <p>コンテンツ 3</p>
-  </div>		
+	<!-- Page Content -->
+<div class="w3-black">
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+	  
+  </div>
 </div>
+<p class="mb2"></p>
+	<h5 id="logo"><img src="images/logo.png" width="217" height="87"></h5>
+	
+ <div class="wrapper">
+ 
+<div class="w3-bar w3-black">
+    <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'London')">3DCG</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Paris')">Illustration</button>
+    <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Tokyo')">Drawing</button>
+  </div>
+  
+  <div id="London" class="w3-container w3-border city">
+    <h1 id="logo"><img src="images/3DCG.png" width="189" height="50"></h1>
+	  <p>これは、レイアウト P タグのコンテンツです</p>
+    <img src="images/mein1.png" width="870" height="261" alt="">
+<div class="w3-center">
+<div class="w3-bar w3-border">
+  <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+  <a href="#" class="w3-bar-item w3-button">1</a>
+  <a href="#" class="w3-bar-item w3-button">2</a>
+  <a href="#" class="w3-bar-item w3-button">3</a>
+  <a href="#" class="w3-bar-item w3-button">4</a>
+  <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+</div>
+</div>
+</div>
+
+  <div id="Paris" class="w3-container w3-border city" style="display:none">
+    <h1 id="logo"><img src="images/illustration.png" width="189" height="50"></h1>
+	  <p>これは、レイアウト P タグのコンテンツです</p>
+	  <img src="images/mein2.png" width="870" height="261" alt="">
+<div class="w3-center">
+<div class="w3-bar w3-border">
+  <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+  <a href="#" class="w3-bar-item w3-button">1</a>
+  <a href="#" class="w3-bar-item w3-button">2</a>
+  <a href="#" class="w3-bar-item w3-button">3</a>
+  <a href="#" class="w3-bar-item w3-button">4</a>
+  <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+</div>
+</div>
+  </div>
+
+  <div id="Tokyo" class="w3-container w3-border city" style="display:none">
+    <h1 id="logo"><img src="images/drawing.png" width="189" height="50"></h1>
+	  <p>これは、レイアウト P タグのコンテンツです</p>
+	<img src="images/mein2.png" width="870" height="261" alt="">
+<div class="w3-center">
+<div class="w3-bar w3-border">
+  <a href="#" class="w3-bar-item w3-button">&laquo;</a>
+  <a href="#" class="w3-bar-item w3-button">1</a>
+  <a href="#" class="w3-bar-item w3-button">2</a>
+  <a href="#" class="w3-bar-item w3-button">3</a>
+  <a href="#" class="w3-bar-item w3-button">4</a>
+  <a href="#" class="w3-bar-item w3-button">&raquo;</a>
+</div>
+</div>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+</script>
+</div>
+	 
 		<!-- フッター -->
+<div class="wrapper">
 	<h4></h4>
 	<div id="footer">
-		<a:foot>&copy;Copyright KUZUHA cafe. All rights reserved.</a:foot>
+		<a:foot>東北電子専門学校 ゲームクリエーター科 ２年 村上真由</a:foot>
 	</div>
 	<!-- フッター ここまで -->
 <script type="text/javascript">
@@ -64,5 +122,15 @@ $(function() {
 	$( "#Accordion1" ).accordion(); 
 });
 </script>
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+     
 </body>
 </html>
